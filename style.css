@@ -698,4 +698,19 @@ input:checked + .slider .moon {
     font-size: 6rem;
     color: var(--primary-color); /* Highlight the error code */
     margin-bottom: 0.5rem;
+
+}
+
+@media (max-width: 768px) {
+    /* Target all sections that use the image background */
+    .hero-section, 
+    #about, 
+    #projects, 
+    #contact {
+        /* FIX: Override the problematic 'fixed' attachment on small screens */
+        background-attachment: scroll !important; 
+        
+        /* Optional: Ensure the image always covers the background */
+        background-size: cover; 
+    }
 }
